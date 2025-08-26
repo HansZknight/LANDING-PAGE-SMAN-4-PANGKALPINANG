@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMAN 4 PANGKALPINANG - Sekolah Unggulan di Bangka Belitung</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#f59e0b',
+                        dark: '#1f2937',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-pattern {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9) 0%, rgba(59, 130, 246, 0.8) 100%);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #1e40af, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl mr-3">
+                        S4P
+                    </div>
+                    <h1 class="text-2xl font-bold text-dark">SMAN 4 PANGKALPINANG</h1>
+                </div>
+                
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#beranda" class="text-gray-700 hover:text-primary transition-colors">Beranda</a>
+                    <a href="#tentang" class="text-gray-700 hover:text-primary transition-colors">Tentang</a>
+                    <a href="#fasilitas" class="text-gray-700 hover:text-primary transition-colors">Fasilitas</a>
+                    <a href="#prestasi" class="text-gray-700 hover:text-primary transition-colors">Prestasi</a>
+                    <a href="#galeri" class="text-gray-700 hover:text-primary transition-colors">Galeri</a>
+                    <a href="#kontak" class="text-gray-700 hover:text-primary transition-colors">Kontak</a>
+                </nav>
+                
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="beranda" class="hero-pattern text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di LANDING PAGE SMAN 4 PANGKALPINANG</h2>
+                    <p class="text-xl mb-6">Mencetak Generasi Unggul, Berkarakter, dan Berprestasi untuk Masa Depan Gemilang</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#website-utama" class="bg-accent hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-lg transition-colors text-center">
+                            Kunjungi Website Utama
+                        </a>
+                        <a href="#tentang" class="border-2 border-white hover:bg-white hover:text-primary text-white font-bold py-3 px-8 rounded-lg transition-colors text-center">
+                            Jelajahi Sekolah
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="floating">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/96a8e6ac-c6cc-4056-a868-20605aa61797.png" alt="Gedung utama SMAN 4 Pangkalpinang dengan arsitektur modern dan lingkungan hijau yang asri" class="rounded-xl shadow-2xl w-full max-w-md" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Tentang SMAN 4 PANGKALPINANG</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Sebagai salah satu sekolah menengah atas terbaik di Provinsi Kepulauan Bangka Belitung, kami berkomitmen memberikan pendidikan berkualitas tinggi dengan pendekatan modern dan berorientasi masa depan, SMAN 4 PANGKAL PINANG adalah salah satu satuan pendidikan dengan jenjang SMA di Kel. Ampui, Kec. Pangkal Balam, Kota Pangkalpinang, Kepulauan Bangka Belitung. Dalam menjalankan kegiatannya, SMAN 4 PANGKAL PINANG berada di bawah naungan Kementerian Pendidikan dan Kebudayaan. ALAMAT SMAN 4 PANGKAL PINANG SMAN 4 PANGKAL PINANG beralamat di JL. R. HUNDANI, Kel. Ampui, Kec. Pangkal Balam, Kota Pangkalpinang, Kepulauan Bangka Belitung, dengan kode pos 33116. KONTAK YANG DAPAT DIHUBUNGI Apabila anda ingin bertanya atau menghubungi langsung SMAN 4 PANGKAL PINANG, dapat melalui beberapa media. Website sekolah.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-xl card-hover text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Visi & Misi</h3>
+                    <p class="text-gray-600">Mewujudkan sekolah unggulan yang menghasilkan lulusan berkarakter, berprestasi, dan siap bersaing di tingkat nasional maupun internasional.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl card-hover text-center">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Guru Berpengalaman</h3>
+                    <p class="text-gray-600">Didukung oleh tenaga pendidik profesional yang kompeten dan berpengalaman dalam membimbing siswa meraih prestasi terbaik.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-xl card-hover text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Kurikulum Modern</h3>
+                    <p class="text-gray-600">Mengimplementasikan kurikulum terbaru dengan pendekatan pembelajaran yang kreatif, inovatif, dan berbasis teknologi.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="fasilitas" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Fasilitas Sekolah</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Dukung proses belajar mengajar yang optimal dengan fasilitas modern dan lengkap.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-xl card-hover text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b693492d-7b50-4a07-bb22-5b862fbbb69a.png" alt="Laboratorium komputer modern dengan perangkat terbaru dan jaringan internet cepat" class="w-full h-48 object-cover rounded-lg mb-4" />
+                    <h3 class="text-xl font-bold mb-2">Lab Komputer</h3>
+                    <p class="text-gray-600">Fasilitas komputer terkini dengan akses internet high-speed.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl card-hover text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/35aa8ce5-5d56-4c3f-a4af-510ac062a1c1.png" alt="Perpustakaan yang luas dengan koleksi buku lengkap dan ruang baca yang nyaman" class="w-full h-48 object-cover rounded-lg mb-4" />
+                    <h3 class="text-xl font-bold mb-2">Perpustakaan</h3>
+                    <p class="text-gray-600">Koleksi buku lengkap dengan ruang baca yang nyaman.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl card-hover text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/be8ddd5a-6822-45f0-8e5e-1a0630bae989.png" alt="Laboratorium sains dengan peralatan praktikum lengkap untuk eksperimen fisika, kimia, dan biologi" class="w-full h-48 object-cover rounded-lg mb-4" />
+                    <h3 class="text-xl font-bold mb-2">Lab Sains</h3>
+                    <p class="text-gray-600">Peralatan lengkap untuk praktikum fisika, kimia, dan biologi.</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl card-hover text-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3f76ceb6-7bc8-4791-89a0-f6d43bc3d074.png" alt="Lapangan olahraga multifungsi dengan track lari, lapangan basket, dan fasilitas olahraga lengkap" class="w-full h-48 object-cover rounded-lg mb-4" />
+                    <h3 class="text-xl font-bold mb-2">Lapangan Olahraga</h3>
+                    <p class="text-gray-600">Fasilitas olahraga lengkap untuk berbagai cabang olahraga.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="prestasi" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Prestasi & Penghargaan</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Bukti nyata dedikasi kami dalam mencetak generasi berprestasi.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-primary to-secondary p-1 rounded-xl">
+                    <div class="bg-white p-6 rounded-xl h-full">
+                        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white text-xl mb-4">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Olimpiade Sains</h3>
+                        <p class="text-gray-600">Juara 1 Olimpiade Fisika Tingkat Provinsi 2023</p>
+                        <p class="text-sm text-gray-500 mt-2">12 Siswa Berprestasi</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-secondary to-accent p-1 rounded-xl">
+                    <div class="bg-white p-6 rounded-xl h-full">
+                        <div class="w-12 h-12 bg-secondary rounded-full flex items-center justify-center text-white text-xl mb-4">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Olahraga</h3>
+                        <p class="text-gray-600">Juara Umum Porprov Bangka Belitung 2023</p>
+                        <p class="text-sm text-gray-500 mt-2">8 Cabang Olahraga</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-accent to-primary p-1 rounded-xl">
+                    <div class="bg-white p-6 rounded-xl h-full">
+                        <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center text-white text-xl mb-4">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Seni & Budaya</h3>
+                        <p class="text-gray-600">Penghargaan Festival Seni Nasional 2023</p>
+                        <p class="text-sm text-gray-500 mt-2">5 Kategori Seni</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Achievements Section -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-bold text-dark mb-4">Penghargaan dan Prestasi Tingkat Sekolah/Institusional</h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Juara 10 Besar Galeri Investasi Edukasi Teraktif se-Indonesia (2025): SMAN 4 Pangkalpinang kembali meraih penghargaan ini untuk kedua kalinya, menunjukkan komitmen sekolah dalam literasi keuangan dan inklusi pasar modal.</li>
+                    <li>Apresiasi dari Kantor Bahasa Kepulauan Bangka Belitung (2024): Sekolah menerima apresiasi atas keaktifannya dalam program Giat UKBI Adaptif Merdeka.</li>
+                    <li>Penghargaan untuk Kepala Sekolah (2024): Kepala SMAN 4 Pangkalpinang meraih peringkat terbaik dalam Jambore Guru dan Tenaga Kependidikan (GTK) Hebat, yang menjadi contoh bagi sivitas akademika.</li>
+                </ul>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="text-2xl font-bold text-dark mb-4">Prestasi Siswa</h3>
+                <ul class="list-disc list-inside text-gray-600 space-y-2">
+                    <li>Juara 2 Lomba Teknologi Tepat Guna (April 2025): Tiga siswa sekolah berhasil meraih posisi kedua dalam lomba tersebut.</li>
+                    <li>Prestasi di Ajang FLS3N 2025: Beberapa siswa menunjukkan keunggulannya di tingkat kota, yaitu meraih Juara III pada kategori menyanyi solo (Nadine Fildzah), Juara II pada bidang kriya (Nesya), dan Juara III pada cabang desain poster (Keisya Aprilianti).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeri" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Galeri Kegiatan</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Momen berharga dalam perjalanan pendidikan di SMAN 4 PANGKALPINANG.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/2b9adc3a-45d7-42e0-a816-3d5035ee8fc1.png" alt="Siswa sedang presentasi di kelas dengan latar belakang papan tulis digital" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cacfbc5a-f0e8-4d3f-9166-ed6dcb85a1b1.png" alt="Kegiatan ekstrakurikuler marching band dengan seragam merah putih yang cerah" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e553730a-c23d-44e9-a083-6872b26ef9ac.png" alt="Eksperimen sains di laboratorium dengan peralatan modern dan safety gear" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7dec3e24-c102-43dd-a94d-fb9f3a1e3a17.png" alt="Turnamen basket antar kelas di lapangan sekolah dengan penonton bersemangat" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/316da3e6-66af-428d-90ad-0b1ce68e2f4b.png" alt="Upacara bendera hari Senin dengan seragam pramuka dan formasi rapi" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ea566356-6ba0-476b-bce1-881f8bd9c2cd.png" alt="Workshop coding dan robotics dengan mentor profesional dan perangkat terkini" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fcbb9002-6b34-4d55-96b4-bfcac87263e0.png" alt="Pentas seni tahunan dengan panggung megah dan lighting profesional" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300" />
+                </div>
+                <div class="overflow-hidden rounded-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d8bb1d9e-6835-44b9-9e1b-80896e6cbe0f.png" alt="Kunjungan edukasi ke museum dengan pemandu yang menjelaskan sejarah" class="w-full h-48 object-cover hover:scale-110 transition-transform duration-300" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Promotion Section -->
+    <section id="website-utama" class="py-20 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Website Utama SMAN 4 PANGKALPINANG</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Temukan informasi lengkap tentang sekolah, pendaftaran, akademik, dan berita terbaru di website resmi kami.</p>
+            
+            <div class="bg-white text-dark p-8 rounded-xl max-w-2xl mx-auto mb-8">
+                <h3 class="text-2xl font-bold mb-4 gradient-text">Mengapa Mengunjungi Website Utama?</h3>
+                <ul class="text-left space-y-3 text-gray-700">
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                        Informasi lengkap program akademik dan non-akademik
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                        Portal pendaftaran siswa baru online
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                        Jadwal pelajaran dan kegiatan terkini
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                        Berita dan pengumuman terupdate
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-check-circle text-green-500 mr-3"></i>
+                        Gallery foto dan video kegiatan sekolah
+                    </li>
+                </ul>
+            </div>
+            
+            <a href="https://sman4pkp.sch.id/" class="bg-accent hover:bg-yellow-600 text-white font-bold py-4 px-12 rounded-lg transition-colors text-center inline-block">
+                Kunjungi Website Resmi Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Hubungi Kami</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto">Kami siap membantu Anda mendapatkan informasi lebih lanjut tentang SMAN 4 PANGKALPINANG</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Alamat</h3>
+                    <p class="text-gray-600"> Jl. R.Hundani, Ampui, Kec. Gabek<br>Kota Pangkal Pinang, Kepulauan Bangka Belitung 33172</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-secondary rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Telepon</h3>
+                    <p class="text-gray-600">(0717) 123456<br>0877-2295-4608</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center text-white text-2xl mx-auto mb-4">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <p class="text-gray-600">info@sman4pangkalanpinang.sch.id<br>admin@sman4pangkalanpinang.sch.id</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">SMAN 4 PANGKALPINANG</h3>
+                    <p class="text-gray-400">Sekolah unggulan yang berkomitmen mencetak generasi berkarakter, berprestasi, dan siap menghadapi masa depan.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#beranda" class="text-gray-400 hover:text-white transition-colors">Beranda</a></li>
+                        <li><a href="#tentang" class="text-gray-400 hover:text-white transition-colors">Tentang</a></li>
+                        <li><a href="#fasilitas" class="text-gray-400 hover:text-white transition-colors">Fasilitas</a></li>
+                        <li><a href="#prestasi" class="text-gray-400 hover:text-white transition-colors">Prestasi</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Program</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Akademik</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Ekstrakurikuler</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Beasiswa</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Penerimaan Siswa Baru</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Media Sosial</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/p/SMAN-4-Pangkalpinang-100075948287385/" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://x.com/SMAN4PKP" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-400 transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/smapaofc/?hl=en" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-pink-600 transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@sman4pangkalpinang436" class="w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-red-600 transition-colors">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2024 SMAN 4 PANGKALPINANG. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
